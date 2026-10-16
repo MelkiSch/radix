@@ -3,6 +3,7 @@ import { History, X, Trash2 } from 'lucide-react';
 import SearchBar from './components/SearchBar.jsx';
 import PlantCard from './components/PlantCard.jsx';
 import { EmptyState, ErrorState, CardSkeleton } from './components/States.jsx';
+import InstallPrompt from './components/InstallPrompt.jsx';
 import { getPlant, searchPlants } from './lib/wikidata.js';
 
 const EXAMPLES = ['Dandelion', 'Pissenlit', 'Paardenbloem', 'Taraxacum officinale', 'Quercus robur', 'Lavandula angustifolia'];
@@ -156,6 +157,7 @@ export default function App() {
       </div>
 
       <footer className="pb-6 text-center text-xs text-slate-400">
+        <InstallPrompt />
         <p>Names from Wikidata & GBIF · Etymologies from the Radix lexicon & Wiktionary</p>
         <p className="mt-2 text-slate-500">
           Made by{' '}
