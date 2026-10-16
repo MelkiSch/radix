@@ -85,7 +85,7 @@ export default function App() {
   return (
     <div className="mx-auto flex min-h-dvh max-w-7xl flex-col px-4 sm:px-6 lg:px-8">
       <header className="flex items-center justify-between py-5 sm:py-6">
-        <a href="/" className="flex items-center gap-2.5" id="home-link">
+        <a href={import.meta.env.BASE_URL} className="flex items-center gap-2.5" id="home-link">
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-sage-600 font-serif text-lg italic text-ivory-50 shadow-sm">R</span>
           <span className="font-serif text-2xl tracking-tight text-slate-900">Radix</span>
         </a>
